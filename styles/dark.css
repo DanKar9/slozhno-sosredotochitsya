@@ -21,7 +21,7 @@
 
 
 @media (prefers-color-scheme: dark) {
-  .theme_auto:root {
+  :root {
     --main-font:IBM Plex mono;
     --main-title-color:#DB00FF;
     --bg-color: #000028;

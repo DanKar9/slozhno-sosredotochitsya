@@ -128,8 +128,16 @@ button:focus-visible {
   justify-content: flex-end;
 }
 
+
+.header__title-pos{
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  align-content: flex-end;
+  min-height: 365px;
+}
+
 .title {
-  padding-top: 158px;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   color: var(--main-title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -337,6 +345,10 @@ button:focus-visible {
       padding-block-start: 201px;
   }
 
+  .header__title-pos{
+    min-height: 160px;
+  }
+
   .title {
     padding-top: 10px;
   }
@@ -454,7 +466,7 @@ button:focus-visible {
 
   .title {
     padding: 0px 10px 55px 10px;
-    font-size: 116px;
+  font-size:   clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     font-weight: 700;
     line-height: 82.5%;
     text-align: left;
@@ -519,7 +531,7 @@ button:focus-visible {
   }
 
   .footer__title{
-    font-size: 116px;
+    font-size:   clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 82.5%;
   }

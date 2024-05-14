@@ -251,7 +251,7 @@ button:focus-visible {
 .main__link:hover{
   text-shadow: none;
   border-bottom: 1px var(--text-color) solid;
-  text-shadow: 2px 2px 0 #FF0070;
+  text-shadow: 3px 3px 0 #FF0070;
 }
 
 .main__info-item-mg {
@@ -482,7 +482,7 @@ button:focus-visible {
   .main__inner {
       flex-direction: column;
       margin-block-end: 50px;
-      gap: 19px;
+      gap: 20px;
   }
 
 .main__inner-bg{
@@ -490,7 +490,7 @@ button:focus-visible {
 }
 
 .main__info-title {
-  margin-block-end:11px;
+  margin-block-end:10px;
 }
 
   .main__title-extended {

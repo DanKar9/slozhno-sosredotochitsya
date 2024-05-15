@@ -11,9 +11,12 @@
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  display: grid;
+  align-items: start;
+  grid-template-rows: 1fr 280px 158px;
+  /* display: flex;
+ justify-content: space-between;
+  flex-direction: column; */
   min-height: 728px;
   position: relative;
   color: var(--accent-color);
@@ -126,6 +129,7 @@ button:focus-visible {
   padding-inline-end: 20px;
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 100px;
 }
 
 
@@ -134,7 +138,7 @@ button:focus-visible {
   justify-content: left;
   align-items: flex-end;
   align-content: flex-end;
-  min-height: 365px;
+
 }
 
 .title {
@@ -150,7 +154,7 @@ button:focus-visible {
   font-weight: bold;
   max-width: 491px;
   color: #000028;
-  margin-bottom: 88px;
+  /* margin-bottom: 88px; */
 }
 
 .title-decor {
@@ -334,7 +338,16 @@ button:focus-visible {
 @media (max-width:768px) {
 
   .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
       min-height: 984px;
+  }
+
+  .header__theme-menu{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
   }
 
   .header__theme-menu-list {
@@ -343,6 +356,11 @@ button:focus-visible {
       align-items: flex-end;
       padding-right: 20px;
       padding-block-start: 201px;
+  }
+
+  .header__text-align{
+    margin: 0;
+    width: 100%;
   }
 
   .header__title-pos{
@@ -354,7 +372,7 @@ button:focus-visible {
   }
 
   .header__text {
-    margin-bottom: 136px;
+    margin-bottom: 134px;
       max-width: 364px;
   }
 

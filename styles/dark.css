@@ -16,7 +16,7 @@
   --accent-color:#FF0070;
   --title-color: #000028;
   color-scheme: dark;
-  
+
 }
 
 
@@ -30,5 +30,13 @@
     --title-color: #000028;
     color-scheme: dark;
   }
+
+
+ .page.theme_auto {
+    background-image: url(../images/cover-image-dark.png); 
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+ } 
 
 }

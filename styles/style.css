@@ -33,7 +33,7 @@ a:focus-visible {
 
 .header__theme-menu-button:hover{
   cursor: pointer;
-  border: 1px solid rgba(255, 0, 112, 0.4);
+  border: 1px solid var(--btn-hover-color);
 }
 
 button:hover {
@@ -56,8 +56,8 @@ button:focus-visible {
   height: 25px;
   left: 20px;
   bottom: -16px;
-  border-bottom: 1px solid rgb(255, 0, 112);
-  border-left: 1px solid rgb(255, 0, 112);
+  border-bottom: 1px solid var(--btn-active);
+  border-left: 1px solid var(--btn-active);
 }
 
 .decorated-zone::after {
@@ -68,8 +68,8 @@ button:focus-visible {
   height: 25px;
   right: 22px;
   top: 16px;
-  border-right: 1px solid rgb(255, 0, 112);
-  border-top: 1px solid rgb(255, 0, 112);
+  border-right: 1px solid var(--btn-active);
+  border-top: 1px solid var(--btn-active);
 }
 
 .header__theme-menu-list {
@@ -88,10 +88,11 @@ button:focus-visible {
   padding: 1.5px 13px 6px 13px;
   text-transform: lowercase;
   background: inherit;
+  color: var(--text-title-color);
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid rgb(255, 0, 112);
+  border: 1px solid var(--btn-active);
   pointer-events: none;
 }
 
@@ -100,7 +101,7 @@ button:focus-visible {
 }
 
 .header__theme-menu-button:not(.header__theme-menu-button_active):hover{
-  border: 1px solid rgba(255, 0, 112, 0.4);
+  border: 1px solid var(--btn-hover-color);
 }
 
 .header__element {
@@ -119,7 +120,7 @@ button:focus-visible {
   height: 9px;
   background-color: var(--accent-color);
   border-radius: 50%;
-  box-shadow: 0px 0px 4px 2px rgb(255, 0, 112);
+  box-shadow: 0px 0px 4px 2px var(--btn-active);
 }
 
 .header__text-align {
@@ -149,7 +150,7 @@ button:focus-visible {
   line-height: 23.4px;
   font-weight: bold;
   max-width: 491px;
-  color: #000028;
+  color: var(--title-color);
 }
 
 .title-decor {
@@ -199,7 +200,7 @@ button:focus-visible {
 }
 
 .main__title {
-  color: #FF0070;
+  color: var(--text-title-color);
   font-weight: 700;
   line-height: 23.4px;
   font-size: 18px;
@@ -251,14 +252,14 @@ button:focus-visible {
 }
 
 .main__link {
-  text-shadow: 4px 4px 0 #FF0070;
+  text-shadow: 4px 4px 0 var(--accent-color);
   text-decoration: none;
 }
 
 .main__link:hover{
   text-shadow: none;
   border-bottom: 1px var(--text-color) solid;
-  text-shadow: 3px 3px 0 #FF0070;
+  text-shadow: 3px 3px 0 var(--accent-color);
 }
 
 .main__info-item-mg {

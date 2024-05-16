@@ -11,56 +11,22 @@
   --text-color: #353430;
   --accent-color: #FF8DCB;
   --title-color: #353430;
+  --text-title-color:#353430;
+  --btn-hover-color: rgba(50, 49, 45, 0.4);
+  --btn-active:rgb(53, 52, 48);
   color-scheme: light;
   background-image: url(../images/cover-image-light.png);
 }
 
 
-
-.theme_light .header__theme-menu-button_active{
-  border: 1px solid rgb(53, 52, 48);
-  pointer-events: none;
-}
-
-.theme_light .header__theme-menu-item:hover{
-  border: 1px solid rgba(50, 49, 45, 0.4);
-}
-
-.theme_light .decorated-zone::after {
-  border-right: 1px solid rgb(53, 52, 48);
-  border-top: 1px solid rgb(53, 52, 48);
-}
-
-.theme_light .decorated-zone::before{
-  border-bottom: 1px solid rgb(53, 52, 48);
-  border-left: 1px solid rgb(53, 52, 48);
-}
-
 .theme_light .header__theme-menu-button:not(.header__theme-menu-button_active):hover {
   border: none;
 }
-
 
 .theme_light .header__element {
   display: none;
 }
 
-.theme_light button{
-  color: #353430;
-}
-
-.theme_light .main__title{
-  color: #353430;
-}
-
-.theme_light .main__link {
-  color: #353430;
-  text-shadow: 4px 4px 0 #FF8DCB;
-}
-
-.theme_light .main__link:hover{
-  text-shadow: 3px 3px 0 #FF8DCB;
-}
 
 
 @media (prefers-color-scheme: light) {
@@ -70,55 +36,19 @@
       --text-color: #353430;
       --accent-color: #FF8DCB;
       --title-color: #353430;
+      --text-title-color:#353430;
+      --btn-hover-color: rgba(50, 49, 45, 0.4);
+      --btn-active:rgb(53, 52, 48);
       color-scheme: light;
      
   }
 
  .page {
     background-image: url(../images/cover-image-light.png);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
   }
 
- .header__theme-menu-button_active {
-    border: 1px solid rgb(53, 52, 48);
-    pointer-events: none;
-}
-
-.header__theme-menu-button:not(.header__theme-menu-button_active):hover {
-  border: 1px solid rgba(50, 49, 45, 0.4);
- }
-
- button {
-  color: #353430;
-}
-
- .header__element {
-  display: none;
-}
-
- .main__title {
-  color: #353430;
-}
-
- .decorated-zone::after {
-  border-right: 1px solid rgb(53, 52, 48);
-  border-top: 1px solid rgb(53, 52, 48);
-}
-
- .decorated-zone::before{
-  border-bottom: 1px solid rgb(53, 52, 48);
-  border-left: 1px solid rgb(53, 52, 48);
-}
-
- .main__link {
-  color: #353430;
-  text-shadow: 4px 4px 0 #FF8DCB;
-}
-
- .main__link:hover{
-  text-shadow: 3px 3px 0 #FF8DCB;
-}
+  .header__element {
+    display: none;
+  }
 
 }
